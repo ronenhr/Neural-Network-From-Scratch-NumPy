@@ -24,13 +24,19 @@ The Neural Network consistently outperformed the linear baseline, confirming the
 ![Logistic Regression Plots](logisticregression.png)
 ### Neural Network Performance
 ![Neural Network Plots](NN.png)
+## Dataset Setup
+The model requires the **Fashion-MNIST** dataset in CSV format.
+1.  **Download:** Go to [Fashion MNIST on Kaggle](https://www.kaggle.com/datasets/zalando-research/fashionmnist) and download the archive.
+2.  **Extract & Rename:**
+    * Rename `fashion-mnist_train.csv` to `train.csv`.
+    * Rename `fashion-mnist_test.csv` to `test.csv`.
+3.  **Place Files:** Move both CSV files into the root directory of this repository.
 
 ## How to Run
 1.  Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
-2.  Ensure `train.csv` and `test.csv` (Fashion-MNIST) are in the root directory.
 3.  Run the training script:
     ```bash
     python main.py
